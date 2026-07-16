@@ -1,94 +1,128 @@
 body{
-    background-color: #eee5da;
+    background-color:#eee5da;
 }
+
 header{
-    background-color: #F7F3E9;
+    background-color:#F7F3E9;
+    text-align:center;
 }
-.header{
-    text-align: center; 
-    justify-content: center;
-}
+
 h2{
-    color: #A67C52; 
-    font-size: 70px; 
-    font-family: serif; 
-    padding-bottom: 65px; 
-    margin-top: 0%; 
-    
+    color:#A67C52;
+    font-size:70px;
+    font-family:serif;
+    margin:0;
+    padding-bottom:40px;
 }
+
 #logo{
-    margin: auto; 
-    width:750px; 
-    align-items: center; 
-    padding-top: auto;
+    display:block;
+    width:300px;
+    margin:auto;
 }
+
 h3{
-    text-align: center; 
-    font-size: 50px; 
-    color: #A67C52;
-    text-decoration-line: underline;
+    text-align:center;
+    font-size:50px;
+    color:#A67C52;
+    text-decoration:underline;
 }
+
 .product{
-    width:100%;
+    width:90%;
+    margin:20px auto;
     display:flex;
-    align-items:center;
     background:#F7F3E9;
     border:1px solid #ccc;
     border-radius:12px;
-    padding:0px;
-    margin-bottom:30px;
+    padding:10px;
 }
+
 .pic{
     width:300px;
     height:250px;
-    object-fit:cover;
     border-radius:10px;
 }
-.detail{
-    margin-left:70px;
+
+.details{
+    margin-left:30px;
 }
+
 .name{
     font-size:32px;
-    color:black;
-    margin-bottom:12px;
     font-weight:bold;
-    margin-left: 30px;
+    color:black;
 }
+
 .flavour{
     font-size:22px;
     color:#555;
-    margin-bottom:18px;
-    margin-left: 30px;
 }
-.p{
-    font-size:18px;
-    color:#666;
-    line-height:28px;
-    text-align:justify;
-    margin-bottom:20px;
-}
+
 .price{
     font-size:28px;
     color:#8B0000;
     font-weight:bold;
-    margin-left: 30px;
 }
-h4{
-    padding-top: 50px;
-    font-size:30px;
+
+footer{
+    text-align:center;
+    background:#F7F3E9;
     color:#886e41;
-    margin-bottom:10px;
+    font-size:20px;
+    padding:20px;
 }
-.choosen,footer{
-    text-align: center;
-    background-color: #F7F3E9;
-    color: #886e41;
-    font-size: larger;
+
+h4{
+    font-size:30px;
 }
+
 ul{
-    display: inline-block; 
-    text-align: left;
+    display:inline-block;
+    text-align:left;
 }
-a{
-    color: #886e41;
+
+@media screen and (max-width:768px){
+
+    #logo{
+        width:220px;
+    }
+
+    h2{
+        font-size:45px;
+    }
+
+    h3{
+        font-size:35px;
+    }
+
+    .product{
+        width:95%;
+        padding:8px;
+    }
+
+    .pic{
+        width:150px;
+        height:130px;
+    }
+
+    .details{
+        margin-left:15px;
+    }
+
+    .name{
+        font-size:22px;
+    }
+
+    .flavour{
+        font-size:18px;
+    }
+
+    .price{
+        font-size:22px;
+    }
+
+    h4{
+        font-size:24px;
+    }
 }
